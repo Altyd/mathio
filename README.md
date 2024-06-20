@@ -4,8 +4,8 @@ Welcome to the MathIO! This README provides an overview of the app's features, c
 
 # Table of contents
 
-1. [Purpose] (#Purpose)
-2. [Features](#Features)
+1. [Purpose](#Purpose)
+2. [Features](#Main-Features)
 3. [Contributors](#Contributors)
 
 ## Purpose
