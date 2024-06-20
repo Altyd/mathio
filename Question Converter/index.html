@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Question Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Math Question Converter</h1>
+        <div class="input-area">
+            <textarea id="question" rows="4" placeholder="Enter your math question here..."></textarea>
+            <div id="question-preview"></div>
+            <textarea id="answer" rows="2" placeholder="Enter the answer here..."></textarea>
+            <textarea id="explanation" rows="4" placeholder="Enter the explanation here..."></textarea>
+        </div>
+        <div class="buttons">
+            <button onclick="insertText('\\(', '\\)')">\\( ... \\)</button>
+            <button onclick="insertText('\\sqrt{', '}')">√</button>
+            <button onclick="insertText('^{', '}')">^</button>
+            <button onclick="insertText('\\frac{', '}{', '}')">Fraction</button>
+            <button onclick="insertText('\\cdot')">·</button>
+        </div>
+        <button class="convert-btn" onclick="convertText()">Convert</button>
+        <div class="output">
+            <h2>Converted Text</h2>
+            <pre id="output"></pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

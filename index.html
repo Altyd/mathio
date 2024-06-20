@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Questions</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Random Math Question</h1>
+        <div id="question-container">
+            <p id="question">Click the button to get a random question!</p>
+        </div>
+        <input type="text" id="answer" placeholder="Type your answer here">
+        <button onclick="checkAnswer()">Submit Answer</button>
+        <button onclick="showAnswer()">Show Answer</button>
+        <p id="result"></p>
+        <button onclick="getRandomQuestion()">Next Question</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
